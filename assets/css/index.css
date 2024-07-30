@@ -7,6 +7,9 @@
     @apply py-2 px-4 bg-green text-white font-semibold shadow-md rounded-10 focus:outline-none focus:ring focus:ring-opacity-75;
   }
   .input-primary {
-    @apply relative block h-12 p-4 w-full disabled:cursor-not-allowed disabled:opacity-75 rounded-10 border-gray focus:outline-none border
+    @apply relative block h-12 p-4 w-full disabled:cursor-not-allowed disabled:opacity-75 rounded-10 border-gray focus:outline-none border focus:border-green2 focus:ring-1 focus:placeholder:text-green2 focus:ring-green2 text-green2 ;
+  }
+  .landing-section {
+    @apply w-full flex gap-16 items-center justify-center px-6 my-16;
   }
 }

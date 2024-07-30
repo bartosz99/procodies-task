@@ -21,8 +21,8 @@ const handleSubmitForm = () => {
 </script>
 
 <template>
-  <div class="border rounded-20 border-gray3 flex flex-col gap-2 p-4">
-    <h2 class="text-32 text-green2 text-center">Enter Details</h2>
+  <div class="border rounded-20 border-gray3 flex flex-col gap-2 p-4 max-w-4xl">
+    <h2 class="text-32 text-green2 text-center font-medium">Enter Details</h2>
     <div class="flex gap-4">
       <input
         class="input-primary text-16"
@@ -38,7 +38,7 @@ const handleSubmitForm = () => {
     </div>
     <input class="input-primary" placeholder="Phone number" v-model="inputData.street" />
     <input class="input-primary" placeholder="E-mail" v-model="inputData.street" />
-    <button class="btn-primary" @click="handleSubmitForm">Submit</button>
+    <button class="btn-primary uppercase" @click="handleSubmitForm">Proceed to payment</button>
     <div class="flex gap-4">
       <image v-for="image in encryptionImages" :src="image" />
     </div>
