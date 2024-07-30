@@ -1,9 +1,5 @@
 <script setup lang="ts">
-import encryption_1 from '../assets/images/encryption/encryption_1.png';
-import encryption_2 from '../assets/images/encryption/encryption_2.png';
-import encryption_3 from '../assets/images/encryption/encryption_3.png';
-
-const encryptionImages = [encryption_1, encryption_2, encryption_3];
+import security_providers from '../assets/images/security_providers.png';
 
 const inputData = ref({
   first_name: '',
@@ -21,7 +17,7 @@ const handleSubmitForm = () => {
 </script>
 
 <template>
-  <div class="border rounded-20 border-gray3 flex flex-col gap-2 p-4 max-w-4xl">
+  <div class="border rounded-20 border-gray3 flex flex-col gap-4 p-4 max-w-4xl">
     <h2 class="text-32 text-green2 text-center font-medium">Enter Details</h2>
     <div class="flex gap-4">
       <input
@@ -38,9 +34,11 @@ const handleSubmitForm = () => {
     </div>
     <input class="input-primary" placeholder="Phone number" v-model="inputData.street" />
     <input class="input-primary" placeholder="E-mail" v-model="inputData.street" />
-    <button class="btn-primary uppercase" @click="handleSubmitForm">Proceed to payment</button>
-    <div class="flex gap-4">
-      <image v-for="image in encryptionImages" :src="image" />
+    <button class="btn-primary uppercase mt-2 font-medium" @click="handleSubmitForm">
+      Proceed to payment
+    </button>
+    <div class="flex items-center justify-center gap-4 my-2">
+      <img :src="security_providers" alt="security providers" />
     </div>
   </div>
 </template>
