@@ -1,9 +1,9 @@
 <script setup lang="ts">
-import { features } from '../constants/index';
+import { features, faq } from '../constants/index';
 </script>
 
 <template>
-  <div class="p-8">
+  <div class="">
     <div class="flex items-center gap-16">
       <Products />
       <div>
@@ -34,6 +34,12 @@ import { features } from '../constants/index';
             {{ paragraph }}
           </p>
         </div>
+      </div>
+    </div>
+    <div class="w-full bg-gray4 flex gap-16 items-center my-16 text-green2">
+      <div class="" v-for="(question, index) in faq">
+        <h6 class="text-12">{{ question.question }}</h6>
+        <p class="text-10">{{ question.answer }}</p>
       </div>
     </div>
   </div>

@@ -10,11 +10,13 @@ module.exports = {
       gray: '#ADADAD',
       gray2: '808080',
       gray3: '#DBDBDB',
+      gray4: '#F5F5F5',
       green: '#006340',
       green2: '#2D473E'
     },
     fontSize: {
       10: '10px',
+      12: '12px',
       16: '16px',
       20: '20px',
       22: '22px',
