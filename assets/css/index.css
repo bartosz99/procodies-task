@@ -10,6 +10,6 @@
     @apply relative block h-12 p-4 w-full disabled:cursor-not-allowed disabled:opacity-75 rounded-10 border-gray focus:outline-none border focus:border-green2 focus:ring-1 focus:placeholder:text-green2 focus:ring-green2 text-green2 ;
   }
   .landing-section {
-    @apply w-full flex gap-16 items-center justify-center px-6 my-16;
+    @apply w-full flex flex-col lg:flex-row gap-16 items-center justify-center px-6 my-16;
   }
 }

@@ -32,17 +32,17 @@ const currentProduct = ref({
 </script>
 
 <template>
-  <div class="relative flex flex-col gap-4">
+  <div class="flex flex-col gap-4 relative">
     <div>
       <img
-        class="max-height-480 max-h-lg max-w-lg"
+        class="max-height-480 max-w-full lg:max-h-lg lg:max-w-lg"
         :src="currentProduct.image"
         :alt="currentProduct.name"
       />
     </div>
-    <div class="flex justify-between">
+    <div class="flex gap-4 justify-between">
       <div
-        class="max-w-32"
+        class="max-w-32 cursor-pointer flex"
         :class="{ 'border-green2 border-2 rounded-14': currentProduct.id === product.id }"
         v-for="product in products"
         :key="product.id"
@@ -51,7 +51,7 @@ const currentProduct = ref({
         <img :src="product.image" :alt="product.name" />
       </div>
     </div>
-    <img class="absolute right-0" :src="badge_1" alt="Badge 1" />
+    <img class="absolute right-0" :src="badge_1" alt="pricing badge" />
   </div>
 </template>
 
