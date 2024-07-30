@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import cards_1 from '../assets/images/cards_1.png';
 import { features, faq } from '../constants/index';
 </script>
 
@@ -41,6 +42,10 @@ import { features, faq } from '../constants/index';
         <h6 class="text-12">{{ question.question }}</h6>
         <p class="text-10">{{ question.answer }}</p>
       </div>
+    </div>
+    <div class="w-full flex flex-col items-center pb-8">
+      <p class="text-12">We accept the following credit cards</p>
+      <img :src="cards_1" alt="Credit Cards" />
     </div>
   </div>
 </template>
