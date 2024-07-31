@@ -33,7 +33,7 @@ import { features, faq } from '../constants/index';
 
       <div class="landing-section flex-col">
         <div
-          class="flex flex-col lg:flex-row gap-32 items-center"
+          class="flex flex-col lg:flex-row gap-8 items-center"
           :class="{ 'lg:flex-row-reverse': index % 2 !== 0 }"
           v-for="(feature, index) in features"
         >
